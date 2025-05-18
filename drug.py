@@ -235,9 +235,7 @@ def start():
         DATA = DRUG(SMILES)
         if DATA is not None:
             print(i, DATA)
-            # torch.save(DATA, f'D/D{i}.pt')
-            # torch.save(DATA, f'Dxyz/D{i}.pt')
-            torch.save(DATA, f'DxyzDA/D{i}.pt')
+            torch.save(DATA, f'D/D{i}.pt')
         else:
             print(i)
     
