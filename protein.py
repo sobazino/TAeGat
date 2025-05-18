@@ -219,9 +219,7 @@ def start():
             DATA = PROTEIN(FILE)
             if DATA is not None:
                 print(i, DATA)
-                # torch.save(DATA, f'P/P{i.replace("sequence_","")}.pt')
-                # torch.save(DATA, f'Pxyz/P{i.replace("sequence_","")}.pt')
-                torch.save(DATA, f'PxyzDA/P{i.replace("sequence_","")}.pt')
+                torch.save(DATA, f'P/P{i.replace("sequence_","")}.pt')
             else:
                 print(FILE)
     
